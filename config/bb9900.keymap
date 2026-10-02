@@ -15,7 +15,7 @@
 
 #define SYM 1
 #define UPPER 2
-
+#define LOCK 3
  
 
 
@@ -127,12 +127,28 @@
             bindings = <
         &kp LEFT                      &mkp LCLK         &none      &kp Y   &kp X
 &kp UP   &kp DOWN &kp RIGHT               &mkp RCLK                       &kp  B      &kp A
-&kp K_LOCK  &kp C_AC_PRINT &kp C_PAUSE  &kp K_VOL_UP &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &kp F11    &kp F12   &bootloader
+&tog LOCK  &kp C_AC_PRINT &kp C_PAUSE  &kp K_VOL_UP &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &kp F11    &kp F12   &bootloader
 &bt BT_CLR     &kp F1          &kp F2         &kp F3      &kp F4     &kp F5     &kp F6     &kp F7     &kp F8    &kp F9  &kp F10 &kp DEL
 &kp CAPSLOCK    &kp Q          &kp W         &kp E      &kp R      &kp T      &kp Y      &kp PAGE_UP      &kp INSERT     &kp O   &kp P
 &none    &kp A          &kp S         &kp D      &kp F      &kp G      &kp HOME      &kp END      &kp PAGE_DOWN     &kp L   &none &none         
 &kp C_AL_SCREENSAVER    &kp Z          &kp X         &kp C      &kp V      &kp B      &kp N      &kp M      &kp C_BRI_DN &kp C_BRI_UP &kp RSHFT
   &sys_reset  &kp LCTRL               &kp LALT             &bl BL_TOG           &kp RALT         &kp RCTRL     &none           
+
+            >;
+        };
+
+
+        lock_layer {
+
+            bindings = <
+        &none                      &none         &none      &none   &none
+&none   &none &none               &none                       &none      &none
+&tog LOCK  &none &none  &none &none   &none   &none   &none    &none   &none
+&none     &none         &none         &none      &none     &none     &none     &none     &none    &none  &none &none
+&none    &none          &none         &none      &none      &none      &none      &none      &none     &none   &none
+&none    &none          &none         &none      &none      &none      &none      &none      &none     &none   &none &none         
+&none    &none          &none         &none      &none      &none      &none      &none      &none &none &none
+  &mo LOCK  &none               &none             &none           &none         &none     &mo LOCK           
 
             >;
         };
