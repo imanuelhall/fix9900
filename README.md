@@ -16,7 +16,7 @@ Main changes in this fork:
 8. C_AL_SCREENSAVER moved to FN + LSHFT
 9. BT_SEL_3 removed
 
-## Below is the original README from thoughtfix's project
+## Below is the original README from thoughtfix's fix9900
 ## Where this code comes from
 
 Three separate codebases, maintained by three different people, are stacked
