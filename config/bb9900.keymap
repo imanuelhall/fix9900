@@ -131,7 +131,7 @@
 &bt BT_CLR     &kp F1          &kp F2         &kp F3      &kp F4     &kp F5     &kp F6     &kp F7     &kp F8    &kp F9  &kp F10 &kp DEL
 &kp CAPSLOCK    &kp Q          &kp W         &kp E      &kp R      &kp T      &kp Y      &kp PAGE_UP      &kp INSERT     &kp O   &kp P
 &none    &kp A          &kp S         &kp D      &kp F      &kp G      &kp HOME      &kp END      &kp PAGE_DOWN     &kp L   &none &none         
-&C_AL_SCREENSAVER    &kp Z          &kp X         &kp C      &kp V      &kp B      &kp N      &kp M      &kp C_BRI_DN &kp C_BRI_UP &kp RSHFT
+&kp C_AL_SCREENSAVER    &kp Z          &kp X         &kp C      &kp V      &kp B      &kp N      &kp M      &kp C_BRI_DN &kp C_BRI_UP &kp RSHFT
   &sys_reset  &kp LCTRL               &kp LALT             &bl BL_TOG           &kp RALT         &kp RCTRL     &none           
 
             >;
