@@ -5,13 +5,16 @@ Fork of [Bill-lulu/uc9900](https://github.com/Bill-lulu/uc9900) by Daniel Gentle
 (thoughtfix, <daniel@danielgentleman.com>). MIT licensed, same as
 upstream. See `LICENSE.txt`.
 
+## Flash at your own risk, seriously
+This is just a couple of private changes I made to bring the keyboard firmware for lulu's trackpad keyboard for uconsole closer to the functionality of the original clockworkpi firmware.
+
 Main changes in this fork:
 1. Removed SYM layer, both LFN and RFN access UPPER layer.
 2. Changed FN + UP and FN + DOWN arrow keys to PAGE_UP and PAGE_DOWN
 3. BT_SEL_0, BT_SEL_1, BT_SEL_2 moved to FN + LBKT, FN + RBKT, and FN + MINUS respectively
 4. 1, 2, and 3 returned to function keys when holding FN
 5. BT_CLR moved to FN + GRAVE
-6. FN + ESC returned to K_LOCK
+6. FN + ESC now toggles LOCK function layer
 7. Volume button now VOL_DN and FN + volume button is VOL_UP
 8. C_AL_SCREENSAVER moved to FN + LSHFT
 9. BT_SEL_3 removed
