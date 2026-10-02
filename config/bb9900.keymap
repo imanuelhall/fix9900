@@ -126,7 +126,7 @@
 
             bindings = <
         &kp LEFT                      &mkp LCLK         &none      &kp Y   &kp X
-&kp UP   &kp DOWN &kp RIGHT               &mkp RCLK                       &kp  B      &kp A
+&kp PAGE_UP   &kp PAGE_DOWN &kp RIGHT               &mkp RCLK                       &kp  B      &kp A
 &tog LOCK  &kp C_AC_PRINT &kp C_PAUSE  &kp K_VOL_UP &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &kp F11    &kp F12   &bootloader
 &bt BT_CLR     &kp F1          &kp F2         &kp F3      &kp F4     &kp F5     &kp F6     &kp F7     &kp F8    &kp F9  &kp F10 &kp DEL
 &kp CAPSLOCK    &kp Q          &kp W         &kp E      &kp R      &kp T      &kp Y      &kp PAGE_UP      &kp INSERT     &kp O   &kp P
