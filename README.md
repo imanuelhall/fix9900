@@ -1,9 +1,22 @@
 # fix9900
 
+Fork of fix9900 by thoughtfix [https://github.com/thoughtfix/fix9900] which is a 
 Fork of [Bill-lulu/uc9900](https://github.com/Bill-lulu/uc9900) by Daniel Gentleman
 (thoughtfix, <daniel@danielgentleman.com>). MIT licensed, same as
 upstream. See `LICENSE.txt`.
 
+Main changes in this fork:
+1. Removed SYM layer, both LFN and RFN access UPPER layer.
+2. Changed FN + UP and FN + DOWN arrow keys to PAGE_UP and PAGE_DOWN
+3. BT_SEL_0, BT_SEL_1, BT_SEL_2 moved to FN + LBKT, FN + RBKT, and FN + MINUS respectively
+4. 1, 2, and 3 returned to function keys when holding FN
+5. BT_CLR moved to FN + GRAVE
+6. FN + ESC returned to K_LOCK
+7. Volume button now VOL_DN and FN + volume button is VOL_UP
+8. C_AL_SCREENSAVER moved to FN + LSHFT
+9. BT_SEL_3 removed
+
+## Below is the original README from thoughtfix's project
 ## Where this code comes from
 
 Three separate codebases, maintained by three different people, are stacked
