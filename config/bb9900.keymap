@@ -16,7 +16,7 @@
 #define SYM 1
 #define UPPER 2
 #define LOCK 3
- 
+#define LOCKTOG 4 
 
 
 / {
@@ -143,16 +143,31 @@
             bindings = <
         &none                      &none         &none      &none   &none
 &none   &none &none               &none                       &none      &none
+&none  &none &none  &none &none   &none   &none   &none    &none   &none
+&none     &none         &none         &none      &none     &none     &none     &none     &none    &none  &none &none
+&none    &none          &none         &none      &none      &none      &none      &none      &none     &none   &none
+&none    &none          &none         &none      &none      &none      &none      &none      &none     &none   &none &none         
+&none    &none          &none         &none      &none      &none      &none      &none      &none &none &none
+  &mo LOCKTOG  &none               &none             &none           &none         &none     &mo LOCKTOG           
+
+            >;
+        };
+
+
+        locktog_layer {
+
+            bindings = <
+        &none                      &none         &none      &none   &none
+&none   &none &none               &none                       &none      &none
 &tog LOCK  &none &none  &none &none   &none   &none   &none    &none   &none
 &none     &none         &none         &none      &none     &none     &none     &none     &none    &none  &none &none
 &none    &none          &none         &none      &none      &none      &none      &none      &none     &none   &none
 &none    &none          &none         &none      &none      &none      &none      &none      &none     &none   &none &none         
 &none    &none          &none         &none      &none      &none      &none      &none      &none &none &none
-  &mo LOCK  &none               &none             &none           &none         &none     &mo LOCK           
+  &none  &none               &none             &none           &none         &none     &none           
 
             >;
         };
-
     };
 };
 
